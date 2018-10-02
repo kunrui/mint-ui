@@ -4,6 +4,7 @@
       :slots="dateSlots"
       @change="onChange"
       :visible-item-count="visibleItemCount"
+      :itemHeight="itemHeight"
       class="mint-datetime-picker"
       ref="picker"
       show-toolbar>
@@ -124,6 +125,10 @@
         type: Number,
         default: 7
       },
+      itemHeight: {
+        type: Number,
+        default: 36
+      }
       closeOnClickModal: {
         type: Boolean,
         default: true
